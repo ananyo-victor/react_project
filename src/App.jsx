@@ -4,7 +4,6 @@ import Intro from "./Introduction";
 import Navbar from "./Navbar";
 import Project from "./Project";
 import Contact from "./Contact";
-// import Resume from "./Resume";
 
 
 function App() {
@@ -43,7 +42,6 @@ function App() {
           <About height = {height} />
           <Project height = {height} />
           <Contact height = {height} />
-          {/* <Resume/> */}
         </div>
       </div>
     </>

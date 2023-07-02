@@ -21,7 +21,7 @@ export default function About(props) {
   const hei = 2* props.height;
   return (
     <>
-<section id='about' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300  text-gray-600`}>
+<section id='about' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300  text-gray-800`}>
         <div className={`container mx-auto sm:h-[calc(100vh-${props.height}px)] h-[calc(100vh-${hei}px)] flex flex-col justify-evenly sm:px-10 px-5 sm:pt-10`}>
           <div className="flex w-full flex-col text-center justify-evenly sm:h-full h-full">
             <p className="title-font text-4xl font-medium sm:text-6xl font-mono">About</p>

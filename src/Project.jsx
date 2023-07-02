@@ -17,7 +17,7 @@ const alpha = arr.map((obj) => {
 function Project(props) {
     return (
         <>
-            <section id='project' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-200 text-gray-600`}>
+            <section id='project' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-200 text-gray-800`}>
                 <div className={`container sm:h-[calc(100vh-${props.height}px)] h-fit flex flex-col justify-evenly mx-auto px-5`}>
                     <div className="flex w-full flex-col text-center justify-evenly h-full">
                         <p className="title-font text-4xl font-medium sm:text-6xl font-mono">Projects</p>

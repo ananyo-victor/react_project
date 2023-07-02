@@ -21,16 +21,16 @@ export default function Intro(props) {
   };
   return (
     <>
-      <section id='intro' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300 text-gray-600`}>
+      <section id='intro' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-200 text-gray-800`}>
         <div className={`container mx-auto h-[calc(100vh-${props.height}px)] h-[calc(100vh-${hei}px)] flex flex-col-reverse md:flex-row justify-between px-5`}>
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center h-full">
             <div className=''>
-              <p className="title-font lg:text-7xl text-4xl font-semibold dark:text-white text-gray-600">Hi,</p>
-              <p className="title-font lg:text-4xl text-2xl font-semibold dark:text-white text-gray-600">I am <span className='text-red-500 text-4xl lg:text-7xl'>Ananyo Maitra</span></p>
+              <p className="title-font lg:text-7xl text-4xl font-semibold dark:text-white text-gray-800">Hi,</p>
+              <p className="title-font lg:text-4xl text-2xl font-semibold dark:text-white text-gray-800">I am <span className='text-red-500 text-4xl lg:text-7xl'>Ananyo Maitra</span></p>
             </div>
             <div className="flex mt-5">
-              <button className="sm:text-2xl m-5 flex items-center rounded border-2 border-red-600 px-6 py-2 dark:text-white text-gray-600 hover:bg-red-600 focus:outline-none" onClick={op}>Download CV</button>
-              <a className="sm:text-2xl m-5 flex items-center rounded border-2 border-red-600 dark:bg-red-600 px-6 py-2 dark:text-white text-gray-600 hover:bg-transparent focus:outline-none" href='#project'>Projects</a>
+              <button className="sm:text-2xl m-5 flex items-center rounded border-2 border-red-600 px-6 py-2 dark:text-white text-gray-800 hover:bg-red-600 focus:outline-none" onClick={op}>Download CV</button>
+              <a className="sm:text-2xl m-5 flex items-center rounded border-2 border-red-600 bg-red-600 px-6 py-2 dark:text-white hover:text-gray-800 text-gray-200 hover:bg-transparent focus:outline-none" href='#project'>Projects</a>
             </div>
           </div>
           <div className='px-5 lg:w-1/2 flex justify-center items-center pt-5 sm:pt-0'>

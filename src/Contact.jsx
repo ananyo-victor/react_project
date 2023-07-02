@@ -3,7 +3,7 @@ import React from 'react'
 function Contact(props) {
     return (
         <>
-            <div id='contact' className={`relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300 text-gray-600`}>
+            <div id='contact' className={`relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300 text-gray-800`}>
 
                 <div className={`container sm:h-[calc(100vh-${props.height}px)] h-fit flex flex-col justify-evenly mx-auto px-5 sm:pt-16 pb-10`}>
 
