@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/react_project/static/js/main.83e94761.js",
+    "static/js/787.a2bf511c.chunk.js": "/react_project/static/js/787.a2bf511c.chunk.js",
+    "static/media/Ananyo Resume Final_new_react-1_page-0001.jpg": "/react_project/static/media/Ananyo Resume Final_new_react-1_page-0001.aa33ce8e6b26206ebb28.jpg",
+    "static/media/profile_picture.jpg": "/react_project/static/media/profile_picture.afb2c263abc1825b09dd.jpg",
+    "index.html": "/react_project/index.html",
+    "main.83e94761.js.map": "/react_project/static/js/main.83e94761.js.map",
+    "787.a2bf511c.chunk.js.map": "/react_project/static/js/787.a2bf511c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.83e94761.js"
+  ]
+}
