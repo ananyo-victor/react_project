@@ -17,10 +17,10 @@ const alpha = arr.map((obj) => {
 function Project(props) {
     return (
         <>
-            <section id='project' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] bg-green-900 text-gray-400`}>
+            <section id='project' className={`body-font relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-200 text-gray-600`}>
                 <div className={`container sm:h-[calc(100vh-${props.height}px)] h-fit flex flex-col justify-evenly mx-auto px-5`}>
                     <div className="flex w-full flex-col text-center justify-evenly h-full">
-                        <p className="title-font text-4xl font-medium text-white sm:text-6xl font-mono">Projects</p>
+                        <p className="title-font text-4xl font-medium sm:text-6xl font-mono">Projects</p>
                     </div>
                     <div className="mx-auto flex flex-wrap items-center justify-center px-5">
                         {alpha}

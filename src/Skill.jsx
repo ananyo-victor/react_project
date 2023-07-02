@@ -6,7 +6,7 @@ export default function Skill(props) {
 
     useEffect(() => {
         // Callback function when the element is visible
-        function onVisible(entries, observer) {
+        function onVisible(entries, _observer) {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               // Element is visible on the screen
@@ -19,12 +19,12 @@ export default function Skill(props) {
         }
     
         // Callback function when the element is not visible
-        function onHidden(entries, observer) {
+        function onHidden(entries, _observer) {
           entries.forEach(entry => {
             if (!entry.isIntersecting) {
               // Element is not visible on the screen
               const vis = entry.target.childNodes[1].childNodes[0];
-              vis.classList.remove('-translate-x-full');
+              // vis.classList.remove('-translate-x-full');
               vis.classList.remove('translate-x-0');
               // Call your function or trigger any desired action
             }
@@ -54,10 +54,10 @@ export default function Skill(props) {
         };
       }, []);
     return (
-        <div id='skill' ref={componentRef} className="flex my-2 w-full">
-            <p className="flex sm:w-2/12 w-4/12 items-center sm:text-2xl text-white font-medium sm:justify-end sm:px-10 px-5">{props.skill}</p>
-            <div className="flex h-10 w-8/12 items-center transform transition duration-300 translate-x-6">
-                <div id='vis' className={`h-5 w-[${props.percentage}%] bg-gradient-to-r from-gray-800 to-red-800 rounded  transition-transform duration-700 -translate-x-full`}>
+        <div ref={componentRef} className="flex my-2 w-full">
+            <p className="flex sm:w-2/12 w-4/12 items-center sm:text-2xl font-medium sm:justify-end sm:px-10 px-5">{props.skill}</p>
+            <div className="flex h-10 w-8/12 items-center">
+                <div id='vis' className={`h-5 w-[${props.percentage}%] bg-gradient-to-r dark:from-gray-800 dark:to-red-800 from-gray-200 to-red-800 rounded  transition-transform duration-700 -translate-x-full`}>
                 </div>
             </div>
         </div>

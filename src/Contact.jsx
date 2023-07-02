@@ -3,24 +3,24 @@ import React from 'react'
 function Contact(props) {
     return (
         <>
-            <div id='contact' className={`relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] bg-blue-900 text-gray-400`}>
+            <div id='contact' className={`relative top-[${props.height}px] sm:snap-start scroll-mt-[${props.height}px] dark:bg-gray-900 bg-gray-200 dark:text-gray-300 text-gray-600`}>
 
                 <div className={`container sm:h-[calc(100vh-${props.height}px)] h-fit flex flex-col justify-evenly mx-auto px-5 sm:pt-16 pb-10`}>
 
                     <div className="flex w-full flex-col text-center justify-evenly h-full">
-                        <p className="title-font text-4xl font-medium text-white sm:text-6xl font-mono">Contact</p>
-                        <p className="text-gray-600 mb-12 text-lg">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+                        <p className="title-font text-4xl font-medium sm:text-6xl font-mono">Contact</p>
+                        <p className="my-6 text-lg">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-5">
                         <div className=''>
                             <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
                             <div className="mb-8 flex items-center gap-6">
-                                <a href="ananyomaitroan@gmail.com" target="_blank" rel="noopener noreferrer" className="text-transparent">
+                                <a href="mailto:ananyomaitroan@gmail.com" target="_blank" rel="noopener noreferrer" className="text-transparent">
                                     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                         <g id="Communication / Mail"><path id="Vector" d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="#fb0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></g>
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/ananyo-maitra" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
+                                <a href="https://www.linkedin.com/in/ananyo-maitra" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
                                     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 16 16">
                                         <g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g>
                                     </svg>
@@ -34,27 +34,31 @@ function Contact(props) {
 
                                 </a>
                             </div>
-                            <p className="text-gray-700">Phone: <span className="text-gray-600">+91-8597903406</span></p>
-                            <p className="text-gray-700">Email: <span className="text-gray-600">ananyomaitroan@gmail.com</span></p>
-                            <p className="text-gray-700">Address: <span className="text-gray-600">K.J.Sanyal Road, Opposite of Netaji Club, Malda (West Bengal) - 732101</span></p>
+                            {/* <p className=" ">Phone: <span className="text-red-500">+91-8597903406</span></p> */}
+                            {/* <p className=" ">Email:<span className="text-red-500"> ananyomaitroan@gmail.com</span></p> */}
+                            <p className=" ">Phone:<a href="tel:8597903406" target="_blank" rel="noopener noreferrer" className="text-red-500"> 8597903406</a></p>
+                            <p className=" ">Email:<a href="mailto:ananyomaitroan@gmail.com" target="_blank" rel="noopener noreferrer" className="text-red-500"> ananyomaitroan@gmail.com</a></p>
+                            <p className=" ">Address:<a href="https://maps.app.goo.gl/uvY3t7Ft4LnLv3429" target="_blank" rel="noopener noreferrer" className="text-red-500"> K.J.Sanyal Road, Opposite of Netaji Club, Malda (West Bengal) - 732101</a></p>
+
                         </div>
                         <div>
                             <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
                             <form>
                                 <div className="mb-4">
-                                    <label className="block text-gray-700 text-sm font-medium mb-2" forhtml="name">Name</label>
-                                    <input className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="text" id="name" name="name" placeholder="Enter your name" required />
+                                    <label className="block  text-sm font-medium mb-2" forhtml="name">Name</label>
+                                    <input className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="text" id="name" name="name" placeholder="Enter your name" required />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-700 text-sm font-medium mb-2" forhtml="email">Email</label>
-                                    <input className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="email" id="email" name="email" placeholder="Enter your email" required />
+                                    <label className="block   text-sm font-medium mb-2" forhtml="email">Email</label>
+                                    <input className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="email" id="email" name="email" placeholder="Enter your email" required />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-700 text-sm font-medium mb-2" forhtml="message">Message</label>
-                                    <textarea className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                                    <label className="block   text-sm font-medium mb-2" forhtml="message">Message</label>
+                                    <textarea className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                                 </div>
-                                <div>
-                                    <button className="px-6 py-3 bg-red-500 text-white rounded-md font-medium hover:bg-red-600" type="submit">Send Message</button>
+                                <div className='flex justify-center'>
+                                    <button className="relative inline-flex items-center justify-center md:mr-5 p-0.5 mx-auto rounded-lg group bg-gradient-to-br from-red-600 to-red-800 hover:text-white"><span className='relative transition-all ease-in duration-75 dark:bg-gray-900 bg-gray-200 rounded-md group-hover:bg-opacity-0 md:px-5 p-2'>Send Message</span></button>
+                                    {/* <button className="px-6 py-3 bg-red-500 text-white rounded-md font-medium hover:bg-red-600" type="submit">Send Message</button> */}
                                 </div>
                             </form>
                         </div>
